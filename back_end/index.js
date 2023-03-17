@@ -1,11 +1,9 @@
-import dotEnv from 'dotenv';
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import postRoutes from './routes/postRoutes.js';
 
-dotEnv.config({ path: `./.env` });
 const app = express();
 
 app.use(cors());
@@ -22,7 +20,7 @@ mongoose
     // useFindAndModify: false,
     useUnifiedTopology: true,
   })
-  .then(() => console.log('DB Connected'))
+  .then(() => console.log(''))
   .catch((e) => console.log(e.message));
 
 // Start Server
