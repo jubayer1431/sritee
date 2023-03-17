@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const url = 'http://localhost:8000/posts';
+const url = 'https://sritee.onrender.com/posts';
 
 export const fetchPosts = () => axios.get(url);
 
